@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">  
+        <center>
+            <h1>Bus Booking</h1>
+            <form action="">
+            <label for="bus">Choose a car:</label>
+            <select name="bus" id="bus">
+              <option value="all">All</option>
+              <option value="bus1">bus1</option>
+              <option value="bus2">bus2</option>
+              <option value="bus3">bus3</option>
+            </select>
+            </form>
+        </center> 
+    </div>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="">Email</label>
+        <input type="text" id="emailId" name="emailId" required><br>
+        <label for="">Phone</label>
+        <input type="number" id="phonenumber" name="phonenumber"><br>
+        <label for="bus">Car Number</label>
+            <select name="bus" id="bus">
+              <option value="bus1">Bus1</option>
+              <option value="bus2">Bus2</option>
+              <option value="bus3">Bus3</option>
+            </select>
+        <br>
+        <button>Book</button>
+    </form>
+    <ul id="listOfUsers"></ul>
+    <script>
+        function saveToLocalStorage(event){
+            event.preventDefault();
+            const name=event.target.username.value;
+            const email=event.target.emailId.value;
+            const phonenumber=event.target.phonenumber.value;
+        }
+    </script>
+</body>
+
+</html>
